@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/js-datepicker/dist/datepicker.min.css">
+    <title>age calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <form id="age-form">
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="text" id="birthdate" placeholder="Select date" required>
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="output" class="hidden">
+            <p id="age-text">--</p>
+            <div class="age-display">
+                <span id="years"></span>
+            </div>
+        </div>
+        <p id="error" class="error hidden"></p>
+    </div>
+
+    <script src="./node_modules/luxon/build/global/luxon.min.js"></script>
+    <script src="./node_modules/js-datepicker/dist/datepicker.min.js"></script>
+    <script src="./node_modules/imask/dist/imask.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
